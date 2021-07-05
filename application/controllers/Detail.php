@@ -69,4 +69,12 @@ class Detail extends CI_Controller
 		$this->Kegiatan_Model->gantiStatus($id);
 		redirect('kegiatan/');
 	}
+	
+	public function LihatDetail($id)
+	{
+		$data['kegiatan'] = $this->Kegiatan_Model->get_by_id($id);
+		$this->load->view('layout/header');
+		$this->load->view('detail/detail', $data);
+		$this->load->view('layout/footer');
+	}
 }
