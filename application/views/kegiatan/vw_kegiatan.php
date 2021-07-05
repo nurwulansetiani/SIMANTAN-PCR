@@ -32,7 +32,7 @@
                             } else {
                                 echo 'Menunggu';
                             } ?></td>
-                        <td><a href="<?= base_url('detail/komentar/') . $k['id'] ?>">Detail</a></td>
+                        <td><a href="<?= base_url('detail/LihatDetail/') . $k['id'] ?>">Detail</a></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
